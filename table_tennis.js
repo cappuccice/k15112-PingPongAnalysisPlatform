@@ -112,146 +112,110 @@ $(function(){
                 if(modecount == 0){
                   $("#s_style").val("0");
                 }else if(modecount == 1){
-
+                  $("#s_pos").val("0");
                 }else if(modecount == 2){
-
+                  $("#r_style").val("0");
                 }else{
-
+                  $("#r_pos").val("0");
                 }
             break;
             case 50: //2
               if(modecount == 0){
-                $("#s_style").val("0");
-
+                $("#s_style").val("1");
               }else if(modecount == 1){
-
-
+                $("#s_pos").val("1");
               }else if(modecount == 2){
-
-
+                $("#r_style").val("1");
               }else{
-
-
+                $("#r_pos").val("1");
               }
             break;
             case 51: //3
               if(modecount == 0){
-                $("#s_style").val("0");
-
+                $("#s_style").val("2");
               }else if(modecount == 1){
-
-
+                $("#s_pos").val("2");
               }else if(modecount == 2){
-
-
+                $("#r_style").val("2");
               }else{
-
-
+                $("#r_pos").val("2");
               }
             break;
             case 52: //4
               if(modecount == 0){
-                $("#s_style").val("0");
-
+                $("#s_style").val("3");
               }else if(modecount == 1){
-
-
+                $("#s_pos").val("3");
               }else if(modecount == 2){
-
-
+                $("#r_style").val("3");
               }else{
-
-
+                $("#r_pos").val("3");
               }
             break;
             case 53: //5
               if(modecount == 0){
-                $("#s_style").val("0");
-
+                $("#s_style").val("4");
               }else if(modecount == 1){
-
-
+                $("#s_pos").val("4");
               }else if(modecount == 2){
-
-
+                $("#r_style").val("4");
               }else{
-
-
+                $("#r_pos").val("4");
               }
             break;
             case 54: //6
               if(modecount == 0){
-                $("#s_style").val("0");
-
+                $("#s_style").val("5");
               }else if(modecount == 1){
-
-
+                $("#s_pos").val("5");
               }else if(modecount == 2){
-
-
+                $("#r_style").val("5");
               }else{
-
-
+                $("#r_pos").val("5");
               }
             break;
             case 55: //7
               if(modecount == 0){
-                $("#s_style").val("0");
-
+                $("#s_style").val("6");
               }else if(modecount == 1){
-
-
+                $("#s_pos").val("6");
               }else if(modecount == 2){
-
-
+                $("#r_style").val("6");
               }else{
-
-
+                $("#r_pos").val("6");
               }
             break;
             case 56: //8
               if(modecount == 0){
-                $("#s_style").val("0");
-
+                $("#s_style").val("7");
               }else if(modecount == 1){
-
-
+                $("#s_pos").val("7");
               }else if(modecount == 2){
-
-
+                $("#r_style").val("7");
               }else{
-
-
+                $("#r_pos").val("7");
               }
             break;
             case 57: //9
               if(modecount == 0){
-                $("#s_style").val("0");
-
+                $("#s_style").val("8");
               }else if(modecount == 1){
-
-
+                $("#s_pos").val("8");
               }else if(modecount == 2){
-
-
+                $("#r_style").val("8");
               }else{
-
-
+                $("#r_pos").val("8");
               }
             break;
             case 48: //0
               if(modecount == 0){
-                $("#s_style").val("0");
-
+                $("#s_style").val("-1");
               }else if(modecount == 1){
-
-
+                $("#s_pos").val("-1");
               }else if(modecount == 2){
-
-
+                $("#r_style").val("-1");
               }else{
-
-
+                $("#r_pos").val("-1");
               }
             break;
 
