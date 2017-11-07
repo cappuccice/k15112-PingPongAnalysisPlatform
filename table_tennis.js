@@ -105,9 +105,6 @@ $(function(){
             //   }
             // break;
             //キー入力の実装
-
-            //改善版
-            //サービステクニック 1-7
             case 49: //1
                 if(modecount == 0){
                   $("#s_style").val("0");
@@ -323,14 +320,14 @@ $(function(){
             //     $("#r_pos").val("-2");
             //     $("#r_style").val("-2");
             // break;
-            case 49: //1
-                if($("#player").val() == "player2_id"){
-                  $("#player").val("player1_id");
-                }else {
-                  $("#player").val("player2_id");
-                  playerCount = 1;
-                }
-            break;
+            // case 49: //1
+            //     if($("#player").val() == "player2_id"){
+            //       $("#player").val("player1_id");
+            //     }else {
+            //       $("#player").val("player2_id");
+            //       playerCount = 1;
+            //     }
+            // break;
 
         }
     });
