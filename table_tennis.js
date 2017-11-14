@@ -1,10 +1,9 @@
 //仮
 document.getElementById("PPAP").src = "PPAPS.jpg";
 
-var player1_id = "";
-var player2_id = "";
-//var let = "";
-var service = "";
+var player1_id = "0";
+var player2_id = "1";
+$("#service").val(player1_id);
 var s_style = "";
 var s_pos = "";
 var s_racket = "";
@@ -21,57 +20,47 @@ $(function(){
     $('html').keyup(function(e){
         switch(e.which){
             case 13: // Enter
-              // if(serviceChange == 0 || serviceChange == 1){
-              //   player = "選手A" + AService;
-              //   AService++;
-              //   serviceChange++;
-              //   changeCount = 0;
-              // }else{
-              //   player = "選手B" + BService;
-              //   BService++;
-              //   changeCount++;
-              //   if(changeCount == 2){
-              //     serviceChange = 0;
-              //   }
-              // }
-
               if(modecount == 0){
                   modecount++;
-                  console.log("1");
               }else if(modecount == 1){
                   modecount++;
-                  console.log("2");
               }else if(modecount == 2){
                   modecount++;
-                  console.log("3");
               }else{
-                  console.log("4");
+                console.log($("#service").val());
+                // console.log($("#s_racket").val());
+                // console.log($("#s_style").val());
+                // console.log($("#s_pos").val());
+                // console.log($("#r_racket").val());
+                // console.log($("#r_style").val());
+                // console.log($("#r_pos").val());
 
-                $("#player").val(player);
                 $('#table_body').append(
                   $('<tr>').append(
-                    $('<td>').append(player),
-                    $('<td>').append(s_style),
-                    $('<td>').append(service),
-                    $('<td>').append(s_pos),
-                    $('<td>').append(s_racket),
-                    $('<td>').append(receive),
-                    $('<td>').append(r_style),
-                    $('<td>').append(r_pos),
-                    $('<td>').append(r_racket),
-                    $('<td>').append(winner)
+                    $('<td>').append($("#service").val()),
+                    $('<td>').append($("#s_racket").val()),
+                    $('<td>').append($("#s_style").val()),
+                    $('<td>').append($("#s_pos").val()),
+                    $('<td>').append($("#r_racket").val()),
+                    $('<td>').append($("#r_style").val()),
+                    $('<td>').append($("#r_pos").val()),
                   )
                 )
                 $("#service").val("");
                 $("#s_style").val("");
                 $("#s_pos").val("");
                 $("#s_racket").val("");
-                $("#receive").val("");
                 $("#r_style").val("");
                 $("#r_pos").val("");
                 $("#r_racket").val("");
-                $("#winner").val("");
                 modecount = 0;
+                if(playerCount == 0){
+                  playerCount = 1;
+                  $("#service").val(player1_id);
+                }else{
+                  playerCount = 0;
+                  $("#service").val(player2_id);
+                }
               }
             break;
 
@@ -215,6 +204,27 @@ $(function(){
                 $("#r_pos").val("-1");
               }
             break;
+
+            case 109: //-
+              if(modecount == 0 || modecount == 1){
+                $("#s_racket").val("0");
+              }else{
+                $("#r_racket").val("0");
+              }
+            break;
+
+            case 107: //+
+              if(modecount == 0 || modecount == 1){
+                $("#s_racket").val("1");
+              }else{
+                $("#r_racket").val("1");
+              }
+            break;
+
+            case 187: //=
+              $(table_body).clone(true).insertAfter(saveTable);
+            break;
+
 
             // //トス高さ
             // case 69: //W
