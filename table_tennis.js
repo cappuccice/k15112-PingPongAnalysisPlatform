@@ -1,11 +1,10 @@
-//仮
-document.getElementById("PPAP").src = "PPAPS.jpg";
+
 
 var player1_id = "0";
 var player2_id = "1";
 $("#service").val(player1_id);
 var s_style = "";
-var s_pos = "";
+var s_pos = "0";
 var s_racket = "";
 
 var receive ="";
@@ -15,6 +14,13 @@ var r_racket = "";
 var winner = "";
 var playerCount = 1;
 var modecount = 0;
+
+$("#s_pos").val("0");
+$("#r_pos").val("0");
+
+document.getElementById("PPAP").src = "PPAPS.jpg";
+document.getElementById("s_pos").src = "./img/" + $("#s_pos").val() + ".png";
+document.getElementById("r_pos").src = "./img/" + $("#r_pos").val() + ".png";
 
 $(function(){
     $('html').keyup(function(e){
@@ -96,133 +102,164 @@ $(function(){
             //キー入力の実装
             case 49: //1
                 if(modecount == 0){
-                  $("#s_style").val("0");
+                  $("#s_style").val("横回転");
                 }else if(modecount == 1){
-                  $("#s_pos").val("0");
+                  $("#s_pos").val("1");
+                  document.getElementById("s_pos").src = "./img/" + $("#s_pos").val() + ".png";
                 }else if(modecount == 2){
-                  $("#r_style").val("0");
+                  $("#r_style").val("チキータ");
                 }else{
-                  $("#r_pos").val("0");
+                  $("#r_pos").val("1");
+                  document.getElementById("r_pos").src = "./img/" + $("#r_pos").val() + ".png";
                 }
             break;
             case 50: //2
               if(modecount == 0){
-                $("#s_style").val("1");
+                $("#s_style").val("縦回転");
               }else if(modecount == 1){
-                $("#s_pos").val("1");
+                $("#s_pos").val("2");
+                document.getElementById("s_pos").src = "./img/" + $("#s_pos").val() + ".png";
               }else if(modecount == 2){
-                $("#r_style").val("1");
+                $("#r_style").val("フリック");
               }else{
-                $("#r_pos").val("1");
+                $("#r_pos").val("2");
+                document.getElementById("r_pos").src = "./img/" + $("#r_pos").val() + ".png";
               }
             break;
             case 51: //3
               if(modecount == 0){
-                $("#s_style").val("2");
+                $("#s_style").val("yg");
               }else if(modecount == 1){
-                $("#s_pos").val("2");
+                $("#s_pos").val("3");
+                document.getElementById("s_pos").src = "./img/" + $("#s_pos").val() + ".png";
               }else if(modecount == 2){
-                $("#r_style").val("2");
+                $("#r_style").val("ストップ");
               }else{
-                $("#r_pos").val("2");
+                $("#r_pos").val("3");
+                document.getElementById("r_pos").src = "./img/" + $("#r_pos").val() + ".png";
               }
             break;
             case 52: //4
               if(modecount == 0){
-                $("#s_style").val("3");
+                $("#s_style").val("バックハ");
               }else if(modecount == 1){
-                $("#s_pos").val("3");
+                $("#s_pos").val("4");
+                document.getElementById("s_pos").src = "./img/" + $("#s_pos").val() + ".png";
               }else if(modecount == 2){
-                $("#r_style").val("3");
+                $("#r_style").val("ツッツキ");
               }else{
-                $("#r_pos").val("3");
+                $("#r_pos").val("4");
+                document.getElementById("r_pos").src = "./img/" + $("#r_pos").val() + ".png";
               }
             break;
             case 53: //5
               if(modecount == 0){
-                $("#s_style").val("4");
+                $("#s_style").val("しゃがみ");
               }else if(modecount == 1){
-                $("#s_pos").val("4");
+                $("#s_pos").val("5");
+                document.getElementById("s_pos").src = "./img/" + $("#s_pos").val() + ".png";
               }else if(modecount == 2){
-                $("#r_style").val("4");
+                $("#r_style").val("フロウ");
               }else{
-                $("#r_pos").val("4");
+                $("#r_pos").val("5");
+                document.getElementById("r_pos").src = "./img/" + $("#r_pos").val() + ".png";
               }
             break;
             case 54: //6
               if(modecount == 0){
-                $("#s_style").val("5");
+                $("#s_style").val("");
               }else if(modecount == 1){
-                $("#s_pos").val("5");
+                $("#s_pos").val("6");
+                document.getElementById("s_pos").src = "./img/" + $("#s_pos").val() + ".png";
               }else if(modecount == 2){
-                $("#r_style").val("5");
+                $("#r_style").val("ドライブ強");
               }else{
-                $("#r_pos").val("5");
+                $("#r_pos").val("6");
+                document.getElementById("r_pos").src = "./img/" + $("#r_pos").val() + ".png";
               }
             break;
             case 55: //7
               if(modecount == 0){
-                $("#s_style").val("6");
+                $("#s_style").val("");
               }else if(modecount == 1){
-                $("#s_pos").val("6");
+                $("#s_pos").val("7");
+                document.getElementById("s_pos").src = "./img/" + $("#s_pos").val() + ".png";
               }else if(modecount == 2){
-                $("#r_style").val("6");
+                $("#r_style").val("ドライブ弱");
               }else{
-                $("#r_pos").val("6");
+                $("#r_pos").val("7");
+                document.getElementById("r_pos").src = "./img/" + $("#r_pos").val() + ".png";
               }
             break;
             case 56: //8
               if(modecount == 0){
-                $("#s_style").val("7");
+                $("#s_style").val("");
               }else if(modecount == 1){
-                $("#s_pos").val("7");
+                $("#s_pos").val("8");
+                document.getElementById("s_pos").src = "./img/" + $("#s_pos").val() + ".png";
               }else if(modecount == 2){
-                $("#r_style").val("7");
+                $("#r_style").val("カット");
               }else{
-                $("#r_pos").val("7");
+                $("#r_pos").val("8");
+                document.getElementById("r_pos").src = "./img/" + $("#r_pos").val() + ".png";
               }
             break;
             case 57: //9
               if(modecount == 0){
-                $("#s_style").val("8");
+                $("#s_style").val("");
               }else if(modecount == 1){
-                $("#s_pos").val("8");
+                $("#s_pos").val("9");
+                document.getElementById("s_pos").src = "./img/" + $("#s_pos").val() + ".png";
               }else if(modecount == 2){
-                $("#r_style").val("8");
+                $("#r_style").val("逆チキ");
               }else{
-                $("#r_pos").val("8");
+                $("#r_pos").val("9");
+                document.getElementById("r_pos").src = "./img/" + $("#r_pos").val() + ".png";
               }
             break;
             case 48: //0
               if(modecount == 0){
-                $("#s_style").val("-1");
+                $("#s_style").val("レット");
               }else if(modecount == 1){
-                $("#s_pos").val("-1");
+                $("#s_pos").val("0");
+                document.getElementById("s_pos").src = "./img/" + $("#s_pos").val() + ".png";
               }else if(modecount == 2){
-                $("#r_style").val("-1");
+                $("#r_style").val("レット");
               }else{
-                $("#r_pos").val("-1");
+                $("#r_pos").val("0");
+                document.getElementById("r_pos").src = "./img/" + $("#r_pos").val() + ".png";
               }
             break;
 
             case 109: //-
               if(modecount == 0 || modecount == 1){
-                $("#s_racket").val("0");
+                $("#s_racket").val("表");
               }else{
-                $("#r_racket").val("0");
+                $("#r_racket").val("表");
               }
             break;
 
             case 107: //+
               if(modecount == 0 || modecount == 1){
-                $("#s_racket").val("1");
+                $("#s_racket").val("裏");
               }else{
-                $("#r_racket").val("1");
+                $("#r_racket").val("裏");
               }
             break;
 
             case 187: //=
-              $(table_body).clone(true).insertAfter(saveTable);
+              $("#table_body").clone(true).insertAfter(saveTable);
+              $("#table_body").remove();
+
+              var i = 0;
+              function addInput(){
+                i++;
+                $("#table_body").    //#table_bodyを取得
+                  clone(true).   //上で取得した中身をコピー
+                    find('.detail').  //そのコピーした中身のdetailとついている要素を取得
+                      attr('id',i).  //上で取得した要素の中のidをiとする
+                        appendTo("#roots");  //#rootsに追加
+              }
             break;
 
 
