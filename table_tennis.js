@@ -43,13 +43,14 @@ $(function(){
 
                 $('#table_body').append(
                   $('<tr>').append(
-                    $('<td>').append($("#service").val()),
-                    $('<td>').append($("#s_racket").val()),
-                    $('<td>').append($("#s_style").val()),
-                    $('<td>').append($("#s_pos").val()),
-                    $('<td>').append($("#r_racket").val()),
-                    $('<td>').append($("#r_style").val()),
-                    $('<td>').append($("#r_pos").val()),
+                    $('<td width="30">').append($("#service").val()),
+                    $('<td width="10">').append($("#s_racket").val()),
+                    $('<td width="100">').append($("#s_style").val()),
+                    //$('<td>').append($("<img alt="s_pos" width="50" height="30">")),
+                    $("#s_pos").clone(true).insertAfter(table_body),
+                    $('<td width="10">').append($("#r_racket").val()),
+                    $('<td width="100">').append($("#r_style").val()),
+                    $("#r_pos").clone(true).insertAfter(table_body),
                   )
                 )
                 $("#service").val("");

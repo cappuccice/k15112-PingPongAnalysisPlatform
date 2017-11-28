@@ -94,7 +94,6 @@ header{
 
 
 th{
-    height: 10px;
     padding:5px;
     background:#266;
     border:1px solid #777;
@@ -102,7 +101,6 @@ th{
 }
 
 td{
-  height: 10px;
   padding:5px;
   background:#eee;
   border:1px solid #777;
